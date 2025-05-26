@@ -1,109 +1,180 @@
-body {
-  margin: 0;
-  font-family: "Jost", sans-serif;
-  background-color: #f4f4f4;
-}
-
-.navbar {
-  background-color: #443297;
-  color: white;
-  padding: 15px 0;
-}
-
-.navbar__container {
-  width: 90%;
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
-.navbar__top {
+.homp_age {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+
+.header_frame {
+  position: relative;
+  margin-top: 47px;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+}
+
+.header_frame .container {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
-.navbar__logo img {
-  height: 40px;
+.container .header_left {
+  position: relative;
+  padding: 15px;
+
+  width: 875px;
+  height: 508px;
+
+  background-color: #0053f6;
+  background-image: url("../image/Rectangle\ 55.svg");
 }
 
-.navbar__search {
+.header_left .header_content {
+  margin-top: 90px;
   display: flex;
-  flex-grow: 1;
-  max-width: 600px;
-  background: white;
-  border-radius: 6px;
-  margin: 10px 20px;
-  overflow: hidden;
+  flex-direction: column;
 }
 
-.search__category {
-  border: none;
-  padding: 10px;
-  font-size: 14px;
+.header_content div {
+  width: 104px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f5c34b;
+  border-radius: 6px;
+
+  font-family: "jost";
+  font-size: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
   color: #041e42;
 }
 
-.search__input {
-  flex: 1;
-  border: none;
-  padding: 10px;
-  outline: none;
-  font-size: 14px;
-}
-
-.search__btn {
-  background-color: #f5c34b;
-  border: none;
-  padding: 0 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.search__btn img {
-  width: 40px;
-  height: 40px;
-}
-
-.navbar__actions {
-  display: flex;
-  gap: 40px;
-}
-
-/* === YUQORI O‘NG ICONLAR UCHUN YANGILANGAN O‘LCHAMLAR === */
-.action {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 14px; /* avval 12px edi */
-}
-
-.action img {
-  width: 120px; /* avval 40x24 edi */
-  height: 120px;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar__bottom {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  padding-top: 10px;
+.header_content span {
   margin-top: 10px;
+  width: 428px;
+  font-family: "jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 87px;
+
+  color: #ffffff;
 }
 
-.main-nav a,
-.nav-promos a {
-  color: white;
-  text-decoration: none;
-  margin-right: 15px;
-  font-size: 14px;
+.header_content p {
+  margin-top: 10px;
+  font-family: "jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+
+  color: #ffffff;
 }
 
-.main-nav a:hover,
-.nav-promos a:hover {
-  text-decoration: underline;
+.header_content a {
+  margin-top: 20px;
+  width: 140px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 6px;
+
+  font-family: "jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+
+  color: #041e42;
+}
+
+.header_content img {
+  position: absolute;
+  right: 10px;
+}
+
+.container .header_right {
+  position: relative;
+  margin-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header_right .header_box {
+  width: 422px;
+  height: 240px;
+
+  display: flex;
+  flex-direction: row;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+
+.header_right .box_left {
+  margin-left: 30px;
+  width: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.box_left span {
+  font-family: "jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+
+  color: #0053f6;
+}
+
+.box_left p {
+  margin: 10px 0;
+  font-family: "jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 38px;
+
+  /*color/text-dark */
+
+  color: #041e42;
+}
+
+.box_left a {
+  font-family: "jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+
+  color: #041e42;
+}
+
+.box_left .hover_border {
+  margin-top: 3px;
+  width: 32px;
+  height: 2px;
+
+  background: #041e04;
+}
+
+.header_box .box_right {
+  width: 50%;
+}
+
+.box_right img {
+  width: 100%;
+  height: 100%;
 }
