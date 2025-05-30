@@ -1,178 +1,197 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zenmart</title>
-  <link rel="stylesheet" href="public/css/home.css">
-  <link rel="stylesheet" href="public/css/command.css">
-  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet" />
-</head>
-<body>
-      
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZENMART</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
     />
+    <link rel="stylesheet" href="public/css/home.css" />
+    <link rel="stylesheet" href="public/css/command.css" />
   </head>
   <body>
-    <header class="navbar">
-      <div class="navbar__container">
-        <div class="navbar__top">
-          <div class="navbar__logo">
-            <img src="public/image/logo.png" alt="Zenmart Logo" />
+    <div class="navbar_frame">
+      <div class="container">
+        <div class="navbar_top">
+          <a href="">
+            <img src="public/image/logo.png" alt="" />
+          </a>
+          <div class="nav_search_frame">
+            <div class="search_box">
+              <div class="category_list">
+                <select class="select">
+                  <option value="" selected>All category</option>
+                  <option value="">computer</option>
+                </select>
+              </div>
+              <input
+                type="search"
+                class="search_input"
+                placeholder="search Product..."
+              />
+            </div>
+            <div class="search_icon_box">
+              <img src="public/image/search.svg" alt="" />
+            </div>
           </div>
-
-          <div class="navbar__search">
-            <select class="search__category">
-              <option>All Categories</option>
-              <option>Computer</option>
-              <option>Electronics</option>
-            </select>
-            <input
-              type="text"
-              class="search__input"
-              placeholder="Search Products..."
-            />
-            <button class="search__btn">
-              <img src="public/image/search.svg" alt="Search" />
-            </button>
+          <div class="nav_top_menu">
+            <a href="">
+              <div class="top_menu_box">
+                <img src="public/image/heard3.svg" alt="" />
+              </div>
+              <div class="box_info_box"></div>
+            </a>
+            <a href="">
+              <div class="top_menu_box">
+                <img src="public/image/account5.svg" alt="" />
+              </div>
+              <div class="box_info_box"></div>
+            </a>
+            <a href="">
+              <div class="top_menu_box">
+                <div class="basket_count"></div>
+                <img src="public/image/total.svg" alt="" />
+              </div>
+              <div class="box_info_box"></div>
+            </a>
           </div>
+        </div>
+        <div class="navbar_bott">
+          <div class="navbar_bott_menu_box">
+            <div class="browse_box">
+              <img src="public/image/belgi.png" alt="Browse Icon" />
+            </div>
+            <div class="navbar_route_menu">
+              <div class="route_menu">
+                <a href="" class="active">Home</a>
+              </div>
+              <div class="route_menu">
+                <a href="">Shop</a>
+              </div>
+              <div class="route_menu">
+                <a href="">order</a>
+              </div>
+              <div class="route_menu">
+                <a href="">About</a>
+              </div>
+              <div class="route_menu">
+                <a href="">contact</a>
+              </div>
+              <div class="sorting_menu">
+                <span>Deaf of the day</span>
+                <span>Hot deals</span>
+                <span>Best Sellers</span>
+                <span>New Arrivals</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home_page">
+          <div class="header_frame">
+            <div class="container">
+              <div class="header_left">
+                <div class="header_content">
+                  <div>special offer</div>
+                  <span>Immersive Entertainment</span>
+                  <p>Discover our new items. Up to 25% Off!</p>
+                  <a href="">Shop Now</a>
+                  <img src="public/image/image 12.svg" alt="" />
+                </div>
+              </div>
+              <div class="header_right">
+                <div class="header_box">
+                  <div class="box_left">
+                    <div class="hover_border"></div>
+                  </div>
+                  <div class="boxt_right">
+                    <img src="public/image/banner-2.png" alt="" />
+                  </div>
+                </div>
+                <div class="header_box">
+                  <div class="box_left">
+                    <div class="hover_border"></div>
+                  </div>
+                  <div class="boxt_right">
+                    <img src="public/image/banner-2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service_frame">
+          <div class="container">
+            <div class="service_box">
+              <img src="public/image/1.png" alt="" />
+              <div class="servise_content"></div>
+            </div>
+            <div class="container"></div>
+            <div class="service_box"></div>
+            <img src="public/image/2.png" alt="" />
+            <div class="servise_content"></div>
+            <div class="service_box"></div>
 
-          <div class="navbar__actions">
-            <div class="action">
-             <img src="public/image/heard.svg" alt="Wishlist" />
+            <img src="public/image/3.png" alt="" />
+            <div class="servise_content"></div>
+            <div class="service_box"></div>
+
+            <img src="public/image/4.png" alt="" />
+          </div>
              
-            </div>
-            <div class="action">
-              <img src="public/image/account.svg" alt="Account" />
-              <div>
-              
-              </div>
-            </div>
-            <div class="action">
-              <img src="public/image/total.svg" alt="Cart" />
-              
-            </div>
-          </div>
-        </div>
+          <div class="home_page">
+            <div class="header_frame">
+              <div class="servise_frame">
 
-        <div class="navbar__bottom">
-          <nav class="main-nav">
-            <a href="#">Home</a>
-            <a href="#">Shop</a>
-            <a href="#">Orders</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-          </nav>
-          <div class="nav-promos">
-            <a href="#">Deal of the day</a>
-            <a href="#">Hot Deals</a>
-            <a href="#">Best Sellers</a>
-            <a href="#">New Arrivals</a>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="home_page">
-      <div class="header_frame">
-        <div class="container">
-          <div class="header_left">
-            <div class="header_content">
-              <div>
-                special offer
-              </div>
-              <span>Immersive Entertainment</span>
-              <p>Discover our new items. Up to 25% Off!</p>
-              <a href="">Shop Now</a>
-              <img src="public/image/image 12.svg" alt="">
-            </div>
-          </div>
-          <div class="header_right">
-            <div class="header_box">
-              <div class="box_left">
-
-              
-                <div class="hover_border"></div>
-              </div>
-              <div class="boxt_right">
-                <img src="public/image/banner-2.png" alt="">
-              </div>
-            </div>
-            <div class="header_box">
-              <div class="box_left">
-                
-                <div class="hover_border"></div>
-              </div>
-              <div class="boxt_right">
-                <img src="public/image/banner-2.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="service_frame">
-      <div class="container">
-        <div class="service_box">
-          <img src="public/image/1.png" alt="">
-          <div class="servise_content">
-          </div>
-        </div>
-        <div class="container"></div>
-         <div class="service_box"></div>
-           <img src="public/image/2.png" alt="">
-          <div class="servise_content">
-          </div>
-          <div class="service_box"></div>
-           
-          <img src="public/image/3.png" alt="">
-          <div class="servise_content">
-          </div>
-           <div class="service_box"></div>
-           
-          <img src="public/image/4.png" alt="">
-      
-          
-      </div>
-    </div>
-    <div class="shop_category_frame">
-      <div class="container">
-        <div class="category_top">
-          <span>Shop Category</span>
-          <a href="">view All category</a>
-        <div class="category_wrapper">
-          <div class="category_box">
-            <div class="category_img_box">
-              <img src="public/image/TV.png" alt="">
-            </div>
-          </div>
-            <div class="category_box">
-            <div class="category_img_box">
-              <img src="public/image/COMPUTERS.png" alt="">
-            </div>
-          </div>
-            <div class="category_box">
-            <div class="category_img_box">
-              <img src="public/image/SMART HOME.png" alt="">
-            </div>
-          </div>
-            <div class="category_box">
-            <div class="category_img_box">
-              <img src="public/image/QULOQCHIN.png" alt="">
-            </div>
-          </div>
-            <div class="category_box">
-            <div class="category_img_box">
-              <img src="public/image/IPHONE.png" alt="">
-            </div>
-          </div>
-            <div class="category_box">
-            <div class="category_img_box">
-              <img src="public/image/video game.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
+                <div class="shop_category_frame">
+                   </div>
+                   <div class="container">
+                    <div class="category_top">
+                    <span>SHop Category</span>
+                    <a href="">View All Categories</a>
+                     </div>
+                    </div>
+                    <div class="category_wrapper">
+                      <div class="category_box">
+                        <div class="category_img_box">
+                          <img src="public/image/image 30.png" alt="">
+                        </div>
+                             <span>TVs Home Theatre and Accessories</span>
+                      </div>   <div class="category_box">
+                        <div class="category_img_box">
+                          <img src="public/image/computor 88.png" alt="">
+                        </div>
+                             <span>computer Tablets and Accessories</span>
+                      </div>
+                         <div class="category_box">
+                        <div class="category_img_box">
+                          <img src="public/image/smart home 89.png" alt="">
+                        </div>
+                             <span>Smart Home</span>
+                      </div>
+                         <div class="category_box">
+                        <div class="category_img_box">
+                          <img src="public/image/quloqchin45.png" alt="">
+                        </div>
+                             <span>Headphones and Portable Speakers</span>
+                      </div>
+                         <div class="category_box">
+                        <div class="category_img_box">
+                          <img src="public/image/iphone1.png" alt="">
+                        </div>
+                             <span>Cell Phone and Accessories</span>
+                      </div>
+                         <div class="category_box">
+                        <div class="category_img_box">
+                          <img src="public/image/game.png" alt="">
+                        </div>
+                             <span>Video Consoles and Accessories </span>
+                      </div>
+                    </div>
+                   </div>
+                  
   </body>
 </html>
