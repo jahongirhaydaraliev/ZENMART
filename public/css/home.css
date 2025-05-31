@@ -254,10 +254,49 @@
   color: #ffffff;
   cursor: pointer;
 }
-
-.homp_age {
+.home_page {
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
+}
+
+/* Kategoriya sarlavhasi */
+.container .category_top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Sarlavha matni */
+.container .category_top span {
+  font-family: "jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  color: #041e42;
+}
+
+/* Havola (View All) */
+.container .category_top a {
+  display: flex;
+  align-items: center;
+  font-family: "jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #041e42;
+  text-decoration: none;
+  border-bottom: 2px solid #041e42;
+  transition: 0.3s ease;
+}
+
+.container .category_top a:hover {
+  color: #0053f6;
+  border-color: #0053f6;
 }
 
 .header_frame {
@@ -452,8 +491,8 @@
 }
 
 .container .service_box {
-  width: 95%;
-  height: 99px;
+  width: 40px;
+  height: 40px;
   display: flex;
   flex-direction: row;
 
@@ -470,7 +509,7 @@
 }
 
 .service_box img {
-  width: 100%;
+  width: 50px;
   height: 50px;
   display: block;
 }
@@ -503,7 +542,7 @@
 
 /* SHOP CATEGORY */
 
-.home_page .shop_category_frame {
+.shop_category_frame.home_page .shop_category_frame {
   position: relative;
   margin-top: 40px;
   width: 100%;
@@ -515,44 +554,6 @@
 
 .shop_category_frame .container {
   flex-direction: column;
-}
-
-.container .category_top {
-  width: 100%;
-  height: auto;
-
-  display: flex;
-  flex-direction: row;
-
-  justify-content: space-between;
-  align-items: center;
-}
-
-.category_top .span {
-  font-family: "jost";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 40px;
-
-  color: #041e42;
-}
-
-.category_top a {
-  display: flex;
-  align-items: center;
-
-  font-family: "jost";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 40px;
-
-  color: #041e42;
-}
-
-.category_top a {
-  border-bottom: 2px solid #041e42;
 }
 
 .container .category_wrapper {
@@ -598,4 +599,180 @@
   text-align: center;
 
   color: #041e42;
+}
+
+/* Seling Product */
+.selling_frame {
+  position: relative;
+  margin-top: 60px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Container ni flex container qilish va product_box lar bir qatorda bo‘lishi uchun ustunlik berish */
+.selling_frame .container {
+  display: flex; /* qo‘shildi */
+  flex-direction: row; /* vertikal emas, gorizontal bo‘lishi uchun */
+  flex-wrap: wrap; /* kerak bo‘lsa yangi qatordan davom etsin */
+  justify-content: center;
+  gap: 20px; /* elementlar orasida bo‘shliq */
+  width: 100%;
+  max-width: 1240px; /* maksimal kenglik */
+}
+
+.container .category_wrapper {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.category_wrapper .next_prev_box {
+  width: 25px;
+  position: relative;
+}
+
+.next_prev_box img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Product_boxes {
+  position: relative;
+  width: 100%; /* butun konteynerga moslashsin */
+  height: auto; /* balandlik avtomatik */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* qatordan oshib ketganda yangi qatordan davom etadi */
+  justify-content: center;
+  gap: 20px; /* elementlar orasida bo'shliq */
+}
+
+.Product_boxes .product_box {
+  width: 360px;
+  height: auto; /* avtomatik balandlik */
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.product_box .product_img_box {
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.product_img_box .hover_box {
+  display: none;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.product_img_box:hover .hover_box {
+  display: flex;
+}
+
+.hover_box button {
+  margin-bottom: 10px;
+  width: 260px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  background: #0053f6;
+  box-shadow: 0px 5px 20px rgba(0, 83, 246, 0.1);
+  border-radius: 6px;
+  font-family: "jost";
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.product_box .product_content_box {
+  padding: 5px 22px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.product_content_box .product_title {
+  font-family: "jost";
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #626974;
+}
+
+.product_content_box .product_desc {
+  margin-top: 7px;
+  height: 56px;
+  font-family: "jost";
+  font-weight: 500;
+  font-size: 16px;
+  overflow: hidden;
+  color: #041e42;
+}
+
+/* Quyida xatolik bor edi: reviw_box o‘rniga review_box bo‘lishi kerak */
+.product_content_box .review_box {
+  margin-top: 7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.review_box img {
+  margin-right: 5px;
+}
+
+.review_box span {
+  margin-left: 10px;
+  font-family: "jost";
+  font-weight: 400;
+  font-size: 14px;
+  color: #626974;
+}
+
+.product_content_box .prime_box {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.prime_box strong {
+  font-family: "jost";
+  font-weight: 500;
+  font-size: 18px;
+  color: #041e42;
+}
+
+.prime_box span {
+  margin-left: 10px;
+  font-family: "jost";
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #626974;
 }
