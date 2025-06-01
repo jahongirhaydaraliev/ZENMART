@@ -1,0 +1,12 @@
+<svg width="161" height="24" viewBox="0 0 161 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="40.9994" cy="12" rx="1.78258" ry="2" fill="#112137"/>
+<ellipse cx="60.6078" cy="12" rx="1.78258" ry="2" fill="#112137"/>
+<path d="M80.2163 3C84.4813 3.00012 88.1294 6.9182 88.1294 12C88.1294 17.0818 84.4813 20.9999 80.2163 21C75.9512 21 72.3032 17.0819 72.3032 12C72.3032 6.91812 75.9512 3 80.2163 3Z" stroke="#112137" stroke-width="2"/>
+<ellipse cx="80.2162" cy="12" rx="1.78258" ry="2" fill="#112137"/>
+<ellipse cx="99.8246" cy="12" rx="1.78258" ry="2" fill="#112137"/>
+<ellipse cx="119.433" cy="12" rx="1.78258" ry="2" fill="#112137"/>
+<path d="M151.902 5.92969L157.312 11.9997L151.902 18.0697" stroke="#112137" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M142.161 12H157.161" stroke="#112137" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.52979 18.0703L3.11966 12.0003L8.52979 5.93031" stroke="#112137" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.2715 12L3.27108 12" stroke="#112137" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

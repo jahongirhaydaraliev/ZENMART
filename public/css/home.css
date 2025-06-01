@@ -260,6 +260,61 @@
   flex-direction: column;
 }
 
+/* PAGINATION */
+.container .pagionation_box {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container .pagionation_box .pagination_main {
+  width: auto;
+  height: 24px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pagination_main img {
+  cursor: pointer;
+}
+
+.container.pagionation_main .pagination_dot {
+  margin: 0 20px;
+  width: 0 auto;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.container .pagination_dot .dot {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #112137;
+  border-radius: 50%;
+}
+
+.container.pagination_dot .dot.active {
+  border: 2px solid #112137;
+}
+
+.pagimation_dot .dot div {
+  width: 4px;
+  height: 4px;
+  background: #112137;
+  border-radius: 50%;
+}
+
 /* Kategoriya sarlavhasi */
 .container .category_top {
   width: 100%;
@@ -491,8 +546,8 @@
 }
 
 .container .service_box {
-  width: 40px;
-  height: 40px;
+  width: 205%;
+  height: 200px;
   display: flex;
   flex-direction: row;
 
@@ -509,7 +564,7 @@
 }
 
 .service_box img {
-  width: 50px;
+  width: 100%;
   height: 50px;
   display: block;
 }
@@ -628,7 +683,6 @@
   margin-top: 30px;
   width: 100%;
   height: auto;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -643,6 +697,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 
 .Product_boxes {
@@ -713,7 +768,6 @@
   padding: 5px 22px;
   width: 100%;
   height: auto;
-  box-sizing: border-box;
 }
 
 .product_content_box .product_title {
@@ -775,4 +829,54 @@
   font-size: 14px;
   text-decoration: line-through;
   color: #626974;
+}
+
+.container .pagionation_box {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container .pagionation_box .pagination_main {
+  width: auto;
+  height: 24px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container.pagionation_main .pagination_dot {
+  margin: 0 20px;
+  width: 0 auto;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.container .pagination_dot .dot {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #112137;
+  border-radius: 50%;
+}
+
+.container.pagination_dot .dot.active {
+  border: 2px solid #112137;
+}
+
+.pagimation_dot .dot div {
+  width: 4px;
+  height: 4px;
+  background: #112137;
+  border-radius: 50%;
 }
